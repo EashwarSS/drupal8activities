@@ -1,0 +1,4 @@
+services:
+  database_form.repository:
+    class: Drupal\database_form\DatabaseFormRepository
+    arguments: ['@database', '@string_translation', '@messenger']

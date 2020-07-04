@@ -1,0 +1,13 @@
+id: webseries_chapters
+label: webseries_chapters
+migration_group: migration_module
+source:
+  plugin: webseries_chapters
+  key: default
+destination:
+  plugin: entity:taxonomy_term
+process:
+  vid:
+    plugin: default_value
+    default_value: tags
+  name: name

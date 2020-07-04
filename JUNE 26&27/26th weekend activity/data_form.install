@@ -1,0 +1,59 @@
+<?php
+function database_form_schema() {
+  $schema['taxonomyform'] = [
+    'description' => 'Stores example person entries for demonstration purposes.',
+    'fields' => [
+      'pid' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique person ID.',
+      ],
+     
+      'firstname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Name of the person.',
+      ],
+	  'lastname' => [
+        'type' => 'varchar',
+		'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => "Creator user's lastname",
+      ],
+      'bio' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'bio for the person.',
+      ],
+	  'gender' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'gender for the person.',
+      ],
+      'interest' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => "taxonomy",
+      ],
+    ],
+    'primary key' => ['pid'],
+    'indexes' => [
+      'firstname' => ['firstname'],
+      'lastname' => ['lastname'],
+      'bio' => ['bio'],
+	  'gender' => ['gender'],
+	 
+	  'interset' => ['interest'],
+    ],
+  ];
+
+  return $schema;
+}

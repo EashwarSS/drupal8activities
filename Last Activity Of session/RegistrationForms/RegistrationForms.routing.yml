@@ -1,0 +1,33 @@
+RegistrationForms.form:
+  path: '/user/signinform'
+  defaults:
+    _title: 'Application Form'
+    _form: '\Drupal\RegistrationForms\Form\SignInForm'
+  requirements:
+    _permission: 'access content'
+
+RegistrationForms:
+  path: '/user/InactiveList'
+  defaults:
+    _title: 'User Inactive List '
+    _form: '\Drupal\RegistrationForms\Form\InActiveUserList'
+  requirements:
+    _permission: 'administrator'
+
+RegistrationForm.form:
+  path: '/user/nextdetails'
+  defaults:
+    _title: 'Detail Form'
+    _form: '\Drupal\RegistrationForms\Form\SecondForm'
+  requirements:
+    _permission: 'access content'
+    
+RegistrationForms.form:
+  path: '/user/alldetails'
+  defaults:
+    _title: 'Details of login User'
+    _form: '\Drupal\RegistrationForms\Form\UserDetail'
+  requirements:
+    _permission: 'access content'
+
+

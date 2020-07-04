@@ -1,0 +1,6 @@
+name: Registration Form
+type: module
+description: 'Registration Form'
+version: 8.x
+package: Custom
+core_version_requirement: ^8 || ^9

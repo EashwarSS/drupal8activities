@@ -1,0 +1,7 @@
+name: migrate image
+description: image migration
+type: module
+core: 8.x
+dependencies:
+  - migrate_drupal
+  - migrate_plus

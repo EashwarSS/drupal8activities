@@ -1,0 +1,22 @@
+id: webseries
+label: webseries
+migration_group: migration_module
+source:
+plugin: webseries
+key: default
+destination:
+plugin: entity:node
+process:
+type:
+plugin: default_value
+default_value: article
+title: name
+body: description
+field_tags:
+plugin: migration
+migration: webseries_chapters
+source: webseries_chapters
+migration_dependencies:
+required:
+webseries_chapters
+
