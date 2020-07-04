@@ -1,0 +1,7 @@
+formcreation:
+  path: '/enrollment/form'
+  defaults:
+    _title: 'Candidate LogIn:'
+    _form: '\Drupal\enrollment\Form\enrollment'
+  requirements:
+    _permission: 'access content'

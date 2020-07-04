@@ -1,0 +1,7 @@
+studentform:
+  path: '/students/form'
+  defaults:
+     _title: 'Student Registration Form'
+     _form: '\Drupal\studentforms\Formapi\Form'
+  requirements:
+     _permission: 'access content'

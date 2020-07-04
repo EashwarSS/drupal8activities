@@ -1,0 +1,23 @@
+migrate_register.register:
+  path: '/migrate/register'
+  defaults:
+    _form: '\Drupal\migrate_register\Form\RegisterForm'
+    _title: 'Register form'
+  requirements:
+    _permission: 'generate lorem ipsum'
+migrate_register.change_form:
+  path: '/migrate/change'
+  defaults:
+    _form: '\Drupal\migrate_register\Form\changeForm'
+    _title: 'Change Form'
+  requirements:
+    _permission: 'generate lorem ipsum'
+    
+migrate_register.edit:
+  path: '/migrate_register/edit/{user}'
+  defaults:
+    _controller: '\Drupal\migrate_register\Controller\CustomregisterController::edit'
+    _title: 'Edit'
+  requirements:
+    _permission: 'generate lorem ipsum'
+    

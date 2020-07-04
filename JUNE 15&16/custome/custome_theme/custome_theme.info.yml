@@ -1,0 +1,21 @@
+name: Mytheme
+type: theme
+description: 'My own created theme'
+core: 8.x
+screenshot: screenshot.png
+base theme: classy
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  right_sidebar: Right sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom
+libraries:
+  - custome_theme/global-styling
+
+
